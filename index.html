@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio Website</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Mohamed Shaheem</h1>
+    <p>Computer Science Student</p>
+
+    <button onclick="document.body.classList.toggle('dark-mode')">
+        Toggle Dark Mode
+    </button>
+
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main class="grid-container">
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>
+            I am a Computer Science student passionate about Web Development,
+            Machine Learning, and Software Engineering.
+        </p>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+
+        <div class="project-card">
+            <h3>Disease Prediction System</h3>
+            <p>Machine Learning model for disease prediction using healthcare datasets.</p>
+        </div>
+
+        <div class="project-card">
+            <h3>Credit Scoring Model</h3>
+            <p>Classification model to predict customer creditworthiness.</p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+</main>
+
+<footer>
+    <p>&copy; 2026 Mohamed Shaheem. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
